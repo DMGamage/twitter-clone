@@ -17,6 +17,8 @@
 }
 body{
     display: flex;
+    --twitter-color: #50b7f5;
+    --twitter-background:#e6ecf0;
 }
 header{
     display: flex;
@@ -29,7 +31,7 @@ header{
 #header-wrapper{
     
     width: 275px;
-    background-color: red;
+    background-color:var(--twitter-background);
     height: 100%;
 }
 main{
@@ -54,7 +56,7 @@ background-color: yellow;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .side-wrappper{
@@ -65,11 +67,40 @@ background-color: yellow;
 
 .side-wrappper .ionic-icon , .twitter-icon{
     padding: 30px;
+   
 
+}
+
+.twitter-icon a ion-icon{
+    font-weight: 700;
+    fill: #50b7f5 !important;
+    font-size: 30px;
 }
 
 .side-wrappper h2{
     font-weight: 800;
-    font-size: 20px;
+    font-size: 24px;
     margin-right: 20px;
+}
+
+.side-wrappper:hover{
+    background-color: var(--twitter-background);
+    border-radius: 30px;
+    color: var(--twitter-color);
+    transition: color 100ms ease-out;
+
+}
+.side-wrappper.active{
+    color:var(--twitter-color)
+}
+
+#sidebar-tweet{
+    width: 100%;
+    background-color: var(--twitter-color);
+    border: none;
+    color: white;
+    font-weight:900;
+    border-radius:30px;
+    height:50px;
+    margin-top:20px;   
 }
