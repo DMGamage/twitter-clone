@@ -1,0 +1,75 @@
+@import url(reset.css);
+@import url(font.css);
+@import url(typography.css);
+
+*{
+    box-sizing: border-box;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+body{
+    display: flex;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    width: 275px;
+    background-color: black;
+}
+
+#header-wrapper{
+    
+    width: 275px;
+    background-color: red;
+    height: 100%;
+}
+main{
+    display: flex;
+    width: 990px;
+    justify-content: flex-start;
+    flex-grow: 1;
+    width: 990px;
+    background-color: blueviolet;
+}
+#main-wrapper{
+width: 990px ;
+height:100%; 
+background-color: yellow;
+
+}
+
+#bottom-navigation{
+    visibility: hidden;
+    position: fixed;
+    height: 52px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: red;
+}
+
+.side-wrappper{
+    display: flex;
+    align-items: center;
+    cursor:pointer;
+}
+
+.side-wrappper .ionic-icon , .twitter-icon{
+    padding: 30px;
+
+}
+
+.side-wrappper h2{
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+}
